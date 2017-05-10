@@ -10,4 +10,9 @@ test('multiply 2 * 3 to equal 6', () => {
 
 test ('object assignment', () => {
   expect(main.obj('one', 1)).toEqual({one: 1})
+  expect(main.obj('two', 2)).toEqual({one: 1, two: 2})
 })
+
+test('adding positive numbers is not zero', () => {
+      expect(main.add(1, 2)).not.toBe(0)
+  })

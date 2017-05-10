@@ -1,3 +1,5 @@
+var obj = {}
+
 module.exports = {
 
   sum: function (a, b) {
@@ -9,9 +11,11 @@ module.exports = {
   },
 
   obj: function (key, value) {
-    var obj = {}
     obj[key] = value
-    console.log(obj)
     return obj
+  },
+
+  add: function (a, b) {
+    return a + b
   }
 }
